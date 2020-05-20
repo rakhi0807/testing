@@ -1,0 +1,27 @@
+Git hub details: 
+1. download git
+2. account open 
+very important we need to config ours credentials
+git config --global user.email "rakhiadhikary2009@gmail.com"
+
+git config --global user.name "rakhi0807"
+
+for windows git bash --> bashing
+username: rakhi0807
+email: rakhiadhikary2009@gmail.com
+pw:
+
+3. initialise it--> git init
+4. create some objects ....or files i.e. txt/html ---> touch rakhi1.txt....touch ishaan.html
+
+lets connect with hub
+5. git status
+6. git add .
+7. git status
+lets save --> commit
+8. git commit -m "your message"
+9. git status --> working tree is clean 
+connect with the remote repo
+10.git remote add origin https://github.com/rakhi0807/testing.git
+11. git push -u origin master
+
