@@ -1,65 +1,75 @@
 
+1.
 Feature: Boarding screen functionalities
 Given user is on the boarding screen of drest mobile app
-And user can see some information with sliding text points
-When user swipe sliding text point
-Then next screen comes with more information
-When user swipe slide points again
-Then next user can see more information box
-And user can see Log in box
-And user can see Join box 
+And user can see some information with sliding text points 
+When user swipe swipes right to left
+Then next screen comes with more information 
+When user swipes slide points again
+Then next user can see more information box 
+And user can see Log in box button
+And user can see Join button
 
+2.
 Feature: Register functionalities as a guest
-Given user is on register screen
-When user tap on Join 
-Then create account screen pops up
-When user tap on policy and promotion box
-Then tik marks come
-And play as a guest box becomes active
-When user tap on play as a guest
-Then it navigates to home page
+Given user is onboarding screen
+When user tap on Join button
+Then Create account screen pops up
+When user taps on policy and promotion box
+And user ticks the Terms and services
+And the play as a guest box becomes active 
+When User taps Play as a guest button
+Then user navigates to Home screen/ Tutorial screen
+
+3.
+Feature: Post registration 
+Given I register successfully as a User
+And I am on the Homescreen/Tutorial Challenge screen
 And a message pops up with tap to continue active write
 When I tap on Tap to continue an information box pops up
-And user tap on the screen 
-Then information box disapear
+And I tap on the screen 
+Then the information box disapears
 
+4.
 Feature: Trial help bar functionalities
-Given user is on the htrial home screen
+Given user is on the tutorial home screen
 When User tap on help 
-Then it navigates to trial help bar screen 
+And it navigates to trial help bar screen 
 And user can see all helpful some informations
-When user tap on brief it comes with welcome information
+When user tap on brief 
+And it navigates to Your First Challenge screen
 When user tap on cross mark on the left top 
-Then the screen closes 
-And goes to home page
+Then user naviagtes to homescren 
 And a message pops up with direction to tap
 When user tap on a piece to dress the model
-Then the text message disapear
-
+Then the text message disapears
+And user is on the Tutorial challenge screen
+**************************************************************
+5.
 Feature: Trial fashion bar functionalities
-Given user is on the trial home screen
-When user tap on fashion bar
-Then it navigates to fashion bar
-And user can see three sub menu bars
+Given user is on the Tutorial Challenge screen
+When user taps on fashion bar
+Then user can see three menu bars i.e. Shoes, Bags and Clothing
 
-Feature: Trial shoe bar functionalities
-Given user is on the trial home screen
-When user tap on shoe bar
-Then it navigates to shoe screen
-And user can see all shoe features
+6.
+Feature: Trial show bar functionalities
+Given user is on the Tutorial Challenge screen
+When user taps on shoe bar
+Then user can see shoe related features
 
+7.
 Feature: Trial bags bar functionalities
-Given user is on the trial home screen
-When user tap on bags
-Then it navigates to bags bar functionalities
-And user can see all bag features
+Given user is on the Tutorial Challenge screen
+When user taps on Bags bar
+Then user can see bags related features
 
+8.
 Feature: Trial clothing bar functionalities
-Given user is on the trial home screen
-When user tap on clothing
-Then it navigates to clothing screen
-And user can see all clothing features
-
+Given user is on the Tutorial Challenge screen
+When user taps on Clothing bar
+Then user can see clothing related features
+*********************************************************
+9.
 Feature: Dressing up functionalities
 Given user is on the trial home screen
 When user tap on one of the menu item features
@@ -67,55 +77,87 @@ Then the model wears that specific feature
 And a messege pops up to unlock
 when user tap again 
 Then the previous message disapear
+
 And new message pops up
 when user tap again
+
 Then the previous message disapear
 And another new message pops up to unlock
+
 When user tap on 
 Then that message disapear
+
 When user tap on unlock
-Then the item get fixed for the model
+Then the item appears to the model
 And wearing box become active
+
 When user tap on wearing box
-Then the box disapear
+Then the box disapear 
+And Owned feature active
+And the item got disappear
+
 When the dressing up completes
 Then a message pops up with the submission information
+
 when tap on 
 Then the text box disapear
+
 When user tap on submit 
 Then another text pops up for confirmation
-And shows two boxes- submit and cancel
-When user tap on submit 
-Then it tells about user credit and choice
+And shows two CTA button - submit and cancel
 
+When user tap on submit 
+Then user navigate to Incredible style screen
+And it tells about user credit and choice
+When user taps continue 
+Then navigates to Homescreen 
+And user credited with by default 15000 and 60 points
+**************************************************************
+
+---------------------------------------------
+10.
 Feature: Trial help bar functionalities
-Given user is on the screen of Drest
+Given user is on the Homescreen
 When user tap on trial home bar
 Then it navigates to the home screen 
+-----------------------------------------------
 
+
+
+11.
 Feature: Profile bar functionalities
 Given user is on the trial home screen
-When user tap on profile bar
+When user taps on profile bar
 Then it navigates to the profile details screen
+And user can see his/her information with some credits and games level info
+And an edit button is visible as well
+And 3 sections of tabs i.e My Looks, Following and Followers available
+And tapping < navigates to Home screen
 
-Feature: My look bar functionalities
+
+12.
+Feature: My Looks bar functionalities
 Given user is on the profile screen
 When user tap on my look 
 Then it shows saved look
 
+13.
 Feature: Following bar functionalities
 Given user is on the profile screen
 When user tap on following
 Then it shows following information
 
+14.
 Feature: Followers bar functionalities
 Given user is on the profile screen
 When user tap on followers
 Then it shows who are following
 
+************************************************************
+15.
 Feature: Edit bar functionalities
 Given user is on the profile screen
-When user tap on edit
+When user taps on edit
 Then it navigates to profile editing screen
 And user can see Picture upload option
 And user can see display name
@@ -130,49 +172,58 @@ Then the letters come in the box
 When user tap on done
 Then it saves the provided informations
 
+16.
 Feature: Back bar functionalities
 Given user is on the profile screen
 When user tap on back bar
 Then it navigates to  the back screen 
- And takes to home screen
+And takes to home screen
 
+17.
 Feature: Notification Functionalities
 Given user is on the home screen
 When user tap on notification bar 
 Then it navigates to  notification informations screen 
 And user can see all informations about notifications
 
+18.
 Feature: Menu bar functionalities
 Given user is on the home screen
 When user tap om menu bar
 Then it navigates to menu bar screen 
 And user can see all  account maintenance information
 
- Feature: Help screen functionalities
+19.
+Feature: Help screen functionalities
 Given user is on the home screen
 When user tap on help
 Then it navigates to help screen
 And user can see the informations 
 
+20.
 Feature: Drest FAQs functionalities
 Given user is on the help screen
-When user tap on drest FAQs
+When user taps on drest FAQs
 Then it navigates to drest FAQs screen
-And user can see all the answers about drest
+And user can see all the FAQs about drest
 When user scroll down 
-Then it shows more informations one by one
+Then it shows more informations 
 When user reaches on the footer 
 Then user can see a feedback question
-And user can see thee emojis
+And user can see three emojis
 When user tap on one emoji
 Then one becames active
 And other two become inactive
+And tapping X button returns to Help screen
 
+
+21.
 Feature: Cross bar functionalities
 Given user is on the drest FAQs screen
 When user tap on cross bar
 Then the screen closes
 
+22.
 Feature: Drest feature status functionalities
 Given user is on the help screen
 When user tap on Drest feature status
@@ -186,8 +237,10 @@ When user tap on one emoji
 Then that emoji remains active
 And other two become inactive
 When user tap on cross bar 
-Then the screen closes
+Then the screen closes and user returns to Help screen
 
+
+23.
 Feature: Drest service status functionalities
 Given user is on the help screen
 When user tap on drest service status
@@ -203,84 +256,108 @@ And other two become inactive
 When user tap on cross bar
 Then the screen closes
 When user tap on the cross ber on help screen
-Then that screen closes
+Then the screen closes and user returns to Help screen
+******************************************************************
 
+
+--------------------------------------------
+24.
 Feature: My waredrobe functionalities
 Given user is on the home screen
 When user tap on my wardrobe
-Then it navigates to waredrove screen
-And user can sub functionalities 
+Then it navigates to My Wardrove screen
+And user can see some functionalities     // The value of testcase
+----------------------------------------------
 
+25.
 Feature: Wishlist functionalities
 Given user is on the waredrobe screen
 When user tap on wishlist
 Then it navigates to wishlist screen
 And user can see wishlist functionalities 
 
+26.
 Feature: All bar functionalities
 Given user is on the wishlist screen
 When user tap on All bar
 Then it snavigates to all bar screen 
 And user can see all wishlist informations
 
+27.
 Feature: Owned bar functionalities
 Given user is on the wishlist screen
 When user tap on owned bar
 Then it shows all information about ownes
 
+28.
 Feature: Unowned bar functionalities
 Given user is on the wishlist screen
 When user tap on unowned
 Then it shows all unowned information
 
-Feature: All brands bar functionalities
+29.
+Feature: All Brands bar functionalities
 Given user is on the waredrobe screen
 When user tap on all brands
 Then it navigates to all brand screen 
-And user can see more all brands sub bar
+And user can see list view of the all brands
 
+30.
 Feature: 16Arlington bar functionalities
 Given user is on the all brands screen
 When user tap 16Arlington bar
 Then it navigates to 16Arlington screen
 And user can see all sub menu bar and features
 
+31.
 Feature: 16Arlington blazer picture bar functionalities
 Given user is on the 16Arlington screen
 When user tap on blazer picture
 Then it navigates to 6Arlington blazer screen
 And user can see all 16Alington blazer information
+And the required creits for the users
 
-Feature: Blazer online bar functionalities
+32.
+Feature: Blazer View  Online functionalities // here we could have a single features for all
 Given user is on the 16Arlington blazer screen
 When user tap on online
 Then it navgates to other web page
 And user can see more designer blazer collections
 
+
+
+33.
 Feature: Share bar functionalities
 Given user is on the 16Arlington blazer screen
-When user tap on share bar 
+When user tap on share  
 Then it gives all option to share the link to others
 
+34.
 Feature: Star bar active functionalities
 Given user is on the 16Arlington blazer screen
 When user tap on star bar 
 Then the star bar becomes active
 And the products adds to wishlist
 
+35.
 Feature: Star bar inactive functionalities
 Given user is on the 16Arlington blazer screen
 When user tap on star bar again
 Then the star bar becomes inactive
 And the products removes from wishlist
 
-Feature: JD Price bar  functionalities
+*******************************************************
+36. 
+Feature: points Price bar  functionalities
 Given user is on the 16Arlington blazer screen
-When user tap on JD Price bar 
+When user tap on points Price bar 
 Then it asks question about unlock
+And it actives for few seconds and return back to points price bar
 When user tap on unlock quetion
 Then it shows owned,unworn
+And points deducted from the price bar
 
+37.
 Feature:  Active picture functionalities
 Given user is on the 16Arlington blazer screen
 When user scrolls down 
@@ -288,6 +365,7 @@ Then user can see more pictures
 When user tap on one of the pictures
 Then it navigates to a screen with more details
 
+38.
 Feature: Get look bar functionalities
 Given user is on the 16Arlington blazer sub screen
 When user tap on get the look bar
@@ -295,6 +373,8 @@ Then it shows unlock for JD Price
 When user tap on it again 
 Then it shows all item owned 
 
+
+39.
 Feature: Top 10 looks active picture functionalities
 Given user is on the 16Arlington blazer sub screen
 When user scroll down
@@ -302,6 +382,7 @@ Then user can see 10 top looks
 When user tap on one of the pictures 
 Then it navigates to a screen with more details
 
+40.
 Feature: JD Price bar functionalities
 Given user is on the 16Arlington blazer screen
 When user tap on JD Price bar
@@ -309,7 +390,8 @@ Then it pops up a text box with information
 And asks for to tap ok as a confirmation
 When user tap on ok
 Then the text box disapears
-
+*********************************************************************** upto 40 reviewed
+41.
 Feature: Picture bar functionalities
 Given user is on the 16Arlington blazer screen
 When user tap on picture bar
@@ -318,103 +400,118 @@ And asks for to tap ok as a confirmation
 When user tap on ok
 Then the text box disapears
 
+42.
 Feature: Blouses picture bar functionalities
 Given user is on the 16Arlington screen
 When user tap on blouses pictures
 Then it navigates to the specific blouse screen wirh details
 
+43.
 Feature: Accessories bar functionalities
 Given user is on the waredrobe screen
 When user tap on accessories bar
 Then it navigates to accessories screen 
 And user can see all accsssories items
 
+44.
 Feature: Activewear bar functionalities
 Given user is on the waredrobe screen
 When user tap on activewear bar
 Then it navigates to activewear screen 
 And user can see all activewear items
 
+45.
 Feature: Bags bar functionalities
 Given user is on the waredrobe screen
 When user tap on bags bar
 Then it navigates to bags screen 
 And user can see all bags items
 
+46.
 Feature: Beachwear bar functionalities
 Given user is on the waredrobe screen
 When user tap on beachwear bar
 Then it navigates to beachwear screen 
 And user can see all beachwear items
 
+47.
 Feature: Coats bar functionalities
 Given user is on the waredrobe screen
 When user tap on coats bar
 Then it navigates to coats screen 
 And user can see all coats items
 
+48.
 Feature: Dresses bar functionalities
 Given user is on the waredrobe screen
 When user tap on dresses bar
 Then it navigates to dresses screen 
 And user can see all dresses items
 
+49.
 Feature: Hosiery bar functionalities
 Given user is on the waredrobe screen
 When user tap on hosiery bar
 Then it navigates to hosiery screen 
 And user can see all hosiery items
 
+50.
 Feature: Jackets bar functionalities
 Given user is on the waredrobe screen
 When user tap on jackets bar
 Then it navigates to jackets screen 
 And user can see all jackets items
 
-
+51.
 Feature: Jeans bar functionalities
 Given user is on the waredrobe screen
 When user tap on jeans bar
 Then it navigates to jeans screen 
 And user can see all jeans items
 
-
+52.
 Feature: Jumpsuits bar functionalities
 Given user is on the waredrobe screen
 When user tap on jumpsuits bar
 Then it navigates to jumpsuits screen 
 And user can see all jumpsuits items
 
+53.
 Feature: Knitwear bar functionalities
 Given user is on the waredrobe screen
 When user tap on knitwear bar
 Then it navigates to knitwear screen 
 And user can see all knitwear items
 
+54.
 Feature: Shoes bar functionalities
 Given user is on the waredrobe screen
 When user tap on shoes bar
 Then it navigates to shoes screen 
 And user can see all shoe items
 
+55.
 Feature: Shorts bar functionalities
 Given user is on the waredrobe screen
 When user tap on shorts bar
 Then it navigates to shorts screen 
 And user can see all shorts items
 
+56.
 Feature: Skirts bar functionalities
 Given user is on the waredrobe screen
 When user tap on skirts bar
 Then it navigates to skirts screen 
 And user can see all skirts items
 
+57.
 Feature: Tops bar functionalities
 Given user is on the waredrobe screen
 When user tap on tops bar
 Then it navigates to tops screen 
 And user can see all tops items
 
+58.
 Feature: Trousers bar functionalities
 Given user is on the waredrobe screen
 When user tap on trousers bar
